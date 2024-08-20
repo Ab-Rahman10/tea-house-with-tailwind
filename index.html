@@ -41,10 +41,10 @@
     }
   </style>
   <body class="manrope-font">
-    <header class="pt-10 md:pt-16 max-w-screen-2xl mx-auto flex">
+    <header class="pt-10 md:pt-16 max-w-screen-2xl mx-auto md:flex">
       <!-- text content -->
-      <div class="space-y-7">
-        <h1 class="text-5xl md:text-7xl font-black">
+      <div class="space-y-7 pl-2">
+        <h1 class="text-5xl md:text-7xl font-extrabold">
           It's good <br />
           tea time at The <br />
           Tea House
@@ -62,12 +62,12 @@
       </div>
 
       <!-- image content -->
-      <div class="relative ml-56">
+      <div class="relative lg:ml-56">
         <img src="./images/banner.png" alt="image" />
 
         <!-- card -->
         <div
-          class="absolute top-96 left-28 flex gap-2 items-center bg-white shadow-lg rounded-lg px-6 py-4 mb-32"
+          class="absolute top-64 lg:top-96 left-14 lg:left-28 flex gap-2 items-center bg-white shadow-lg rounded-lg px-6 py-4"
         >
           <i class="fa-solid fa-star text-amber-500 text-2xl"></i>
           <div>
@@ -77,5 +77,84 @@
         </div>
       </div>
     </header>
+
+    <main class="max-w-screen-2xl mx-auto">
+      <!-- Product section -->
+      <section class="my-16 lg:my-24">
+        <!-- Product title -->
+
+        <h3 class="text-2xl lg:text-4xl font-extrabold text-center mb-4">
+          Our Featured Products
+        </h3>
+        <p class="font-semibold text-gray-500 text-center lg:w-3/4 mx-auto">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+
+        <!-- grid products -->
+        <div
+          class="flex flex-col items-center space-y-3 md:grid md:grid-cols-2 lg:grid-cols-4 mt-12 max-w-screen-xl mx-auto"
+        >
+          <!-- product 1 -->
+          <div
+            class="bg-gradient-to-t from-gray-50 to-gray-100 rounded-lg w-64 h-96 lg:-mb-2"
+          >
+            <img class="py-8 px-16" src="./images/tea-1.png" alt="image" />
+            <div>
+              <h4 class="text-2xl font-extrabold mb-3 text-center">
+                Green Tea
+              </h4>
+              <p class="font-semibold text-gray-500 text-center pb-4">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+
+          <!-- product 2 -->
+          <div
+            class="bg-gradient-to-t from-gray-50 to-gray-100 rounded-lg w-64 h-96"
+          >
+            <img class="py-8 px-16" src="./images/tea-2.png" alt="image" />
+            <div>
+              <h4 class="text-2xl font-extrabold mb-3 text-center">Milk Tea</h4>
+              <p class="font-semibold text-gray-500 text-center pb-4">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+
+          <!-- product 3 -->
+          <div
+            class="bg-gradient-to-t from-gray-50 to-gray-100 rounded-lg w-64 h-96"
+          >
+            <img class="py-8 px-16" src="./images/tea-3.png" alt="image" />
+            <div>
+              <h4 class="text-2xl font-extrabold mb-3 text-center">
+                Black Tea
+              </h4>
+              <p class="font-semibold text-gray-500 text-center pb-4">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+
+          <!-- product 4 -->
+          <div
+            class="bg-gradient-to-t from-gray-50 to-gray-100 rounded-lg w-64 h-96"
+          >
+            <img class="py-8 px-16" src="./images/tea-4.png" alt="image" />
+            <div>
+              <h4 class="text-2xl font-extrabold mb-3 text-center">
+                Lemon Tea
+              </h4>
+              <p class="font-semibold text-gray-500 text-center pb-4">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
